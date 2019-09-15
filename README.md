@@ -11,5 +11,5 @@ You should create a file called auth_info.py with the following contents:
 
 	account_sid = "YOUR SID HERE"
 	auth_token = "YOUR AUTH TOKEN HERE"
-
-
+	account_phone_number = "YOUR TWILIO NUMBER HERE"
+	destination_phone_number = "THE PHONE NUMBER YOU WANT TO CALL"
