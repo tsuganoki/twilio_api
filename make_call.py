@@ -1,13 +1,10 @@
 from twilio.rest import Client
-
+from .auth_info import account_sid, auth_token
 
 def make_call():
     """a code to create a call using twilio API"""
-    account_sid = open("account_sid.txt","r+")
 
-    auth_token = open("auth_token.txt","r+")
-
-    client = Client(account_sid.read(),auth_token.read())
+    client = Client(account_sid,auth_token)
 
     call = client.calls.create(
         url='http://demo.twilio.com/docs/voice.xml',
@@ -16,7 +13,8 @@ def make_call():
 
         )
 
-    return call.sid
+    return call
 
 if __name__ == "__main__":
-    make_call()
+    call = make_call()
+    print(call.sid)

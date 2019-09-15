@@ -1,5 +1,4 @@
-account_sid.txt
-auth_token.txt
+auth_info.py
 ngrok
 .venv
 __pycache*
