@@ -1,0 +1,5 @@
+account_sid.txt
+auth_token.txt
+ngrok
+.venv
+__pycache*
