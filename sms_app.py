@@ -62,7 +62,9 @@ def pokedex():
 
   print(api_response.keys())
 
-  name = (api_response['name']).title()
+  name = (api_response['name']).title()  
+  if name == "Farfetchd":
+    name = "Farfetch\'d"
 
   species_url = api_response['species']['url']
 
