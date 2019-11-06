@@ -97,7 +97,7 @@ def pokedex():
   print(height)
   weight = api_response['weight']
   # 4.53563714903
-  weight = round(weight / 4.53563714903, 0)
+  weight = round(weight / 4.53563714903, 1)
   # + weight
 
   print(weight)
